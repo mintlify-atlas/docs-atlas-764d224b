@@ -1,0 +1,127 @@
+{
+  "projectType": "saas",
+  "projectName": "Horilla",
+  "projectDescription": "Horilla is a free and open source HRMS (Human Resource Management System) built with Django that streamlines HR operations including recruitment, attendance, payroll, leave management, and more.",
+  "theme": "linden",
+  "primaryColor": "#a44032",
+  "lightColor": "#0c0b0b",
+  "darkColor": "#bfb3b0",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation/ubuntu",
+              "installation/windows",
+              "installation/macos",
+              "installation/docker"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/environment-variables",
+              "configuration/database",
+              "configuration/static-files",
+              "configuration/email"
+            ]
+          },
+          {
+            "group": "Core Modules",
+            "pages": [
+              "modules/employee",
+              "modules/recruitment",
+              "modules/onboarding",
+              "modules/attendance",
+              "modules/leave",
+              "modules/payroll",
+              "modules/performance",
+              "modules/offboarding",
+              "modules/helpdesk",
+              "modules/asset"
+            ]
+          },
+          {
+            "group": "Advanced Features",
+            "pages": [
+              "features/biometric",
+              "features/geofencing",
+              "features/face-detection",
+              "features/automations",
+              "features/audit-logs",
+              "features/ldap",
+              "features/microsoft-auth"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/production",
+              "deployment/docker",
+              "deployment/environment"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview",
+              "api/authentication"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/employee",
+              "api/attendance",
+              "api/leave",
+              "api/payroll",
+              "api/asset",
+              "api/helpdesk",
+              "api/notifications"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Employee Management with profiles, documents, and disciplinary actions",
+    "Recruitment pipeline with job postings, interviews, and candidate tracking",
+    "Attendance tracking with biometric device integration and geofencing",
+    "Leave management with approval workflows and leave type configuration",
+    "Payroll processing with deductions, allowances, and tax calculations",
+    "Performance Management System (PMS) with goal tracking and appraisals",
+    "Onboarding and offboarding workflows",
+    "Helpdesk and ticketing system",
+    "Asset management",
+    "REST API with JWT authentication and Swagger/ReDoc documentation",
+    "Docker support for easy deployment",
+    "LDAP authentication and Microsoft Azure AD integration"
+  ],
+  "publicApiSurface": [
+    "GET /api/list/employees/ — List all employees",
+    "GET/PUT/DELETE /api/employees/<id>/ — Employee detail",
+    "GET/POST /api/employee-work-information/ — Work information",
+    "POST /api/clock-in/ — Clock in attendance",
+    "POST /api/clock-out/ — Clock out attendance",
+    "GET/POST /api/attendance/ — Attendance records",
+    "POST /api/attendance-validate/<id> — Validate attendance",
+    "GET/POST /api/attendance-request/ — Attendance requests",
+    "GET/POST /api/leave-request/ — Leave requests",
+    "GET/POST /api/payslip/ — Payslip management",
+    "GET/POST /api/asset/ — Asset management",
+    "GET/POST /api/helpdesk/ — Helpdesk tickets",
+    "POST /api/token/ — Obtain JWT token",
+    "POST /api/token/refresh/ — Refresh JWT token"
+  ]
+}
